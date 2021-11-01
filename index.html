@@ -4,16 +4,13 @@
 <head>
     <title>JTGPOD</title>
     <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
     <div class="head">
-
-        <!-- Navigation Bar start -->
         <nav class="navbar">
-            <!-- LOGO -->
-            <div class="logo"><img src="logo.png" alt="JTG"> JTGPOD</div>
-            <!-- Navigation Menu -->
+            <div class="logo"><img src="images/logo.png" alt="JTG"> JTGPOD</div>
             <ul class="nav-links">
                 <div class="menu">
                     <li><a href="#">Home</a></li>
@@ -33,7 +30,7 @@
             <button id="button1">View All</button>
             <div class="job">
                 <div class="column">
-                    <img src="block1.png" alt="card1">
+                    <img src="images/block1.png" alt="card1">
                 </div>
                 <div class="column2">
                     <div class="card">
@@ -52,7 +49,7 @@
             </div>
             <div class="job">
                 <div class="column">
-                    <img src="block2.png" alt="card2">
+                    <img src="images/block2.png" alt="card2">
                 </div>
                 <div class="column2">
                     <div class="card">
@@ -71,7 +68,7 @@
             </div>
             <div class="job">
                 <div class="column">
-                    <img src="block3.png" alt="card3">
+                    <img src="images/block3.png" alt="card3">
                 </div>
                 <div class="column2">
                     <div class="card">
@@ -93,13 +90,14 @@
             </div>
         </div>
         <!-- Midblock1 ends -->
-
+        
         <!-- Midblock2 start -->
-        <div class="midblock2">
-            <div class="postslider">
+
+         <div class="midblock2">
+           <div class="postslider">
                 <h2 class="blogpost">Blog Posts</h2>
-                <div class="postwrapper">
-                    <div class="post">
+                <div class="postwrapper" onload="show">
+                    <div class="post" id="c1">
                         <div class="innerpost1">
                             <div class="innerpost1a">
                                 <p id="title">By Mehedi Hasan</p>
@@ -116,7 +114,7 @@
                         <div class="innerpost"><button class="card-btn1">Read More</button></div>
                         <div class="innerpost"></div>
                     </div>
-                    <div class="post">
+                    <div class="post" id="c2">
                         <div class="innerpost1">
                             <div class="innerpost1a">
                                 <p id="title">By Mehedi Hasan</p>
@@ -133,7 +131,58 @@
                         <div class="innerpost"><button class="card-btn1">Read More</button></div>
                         <div class="innerpost"></div>
                     </div>
-                    <div class="post">
+                    <div class="post" id="c3">
+                        <div class="innerpost1">
+                            <div class="innerpost1a">
+                                <p id="title">By Mehedi Hasan</p>
+                                <p id="date">Sep 11,2020</p>
+                            </div>
+                            <p id=title2>Cantonese Radio</p>
+                        </div>
+                        <div class="innerpost">
+                            <h2>Over to You - Programme face the axe substancial fincancial cutbacks</h2>
+                        </div>
+                        <div class="innerpost">
+                            <p class="dummytext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus vero dicta ipsum, eligendi asperiores architecto?</p>
+                        </div>
+                        <div class="innerpost"><button class="card-btn1">Read More</button></div>
+                        <div class="innerpost"></div>
+                    </div>
+                    <div class="post" id="c4">
+                        <div class="innerpost1">
+                            <div class="innerpost1a">
+                                <p id="title">By Mehedi Hasan</p>
+                                <p id="date">Sep 11,2020</p>
+                            </div>
+                            <p id=title2>Cantonese Radio</p>
+                        </div>
+                        <div class="innerpost">
+                            <h2>Global News Podcast Thai soldiers kills many people a shooting rampage</h2>
+                        </div>
+                        <div class="innerpost">
+                            <p class="dummytext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus vero dicta ipsum, eligendi asperiores architecto?</p>
+                        </div>
+                        <div class="innerpost"><button class="card-btn1">Read More</button></div>
+                        <div class="innerpost"></div>
+                    </div>
+                    <div class="post" id="c5">
+                        <div class="innerpost1">
+                            <div class="innerpost1a">
+                                <p id="title">By Mehedi Hasan</p>
+                                <p id="date">Sep 11,2020</p>
+                            </div>
+                            <p id=title2>Cantonese Radio</p>
+                        </div>
+                        <div class="innerpost">
+                            <h2>News hour - World Health Organization says a new coronavirus cases</h2>
+                        </div>
+                        <div class="innerpost">
+                            <p class="dummytext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus vero dicta ipsum, eligendi asperiores architecto?</p>
+                        </div>
+                        <div class="innerpost"><button class="card-btn1">Read More</button></div>
+                        <div class="innerpost"></div>
+                    </div>
+                    <div class="post" id="c6">
                         <div class="innerpost1">
                             <div class="innerpost1a">
                                 <p id="title">By Mehedi Hasan</p>
@@ -152,14 +201,16 @@
                     </div>
                 </div>
                 <div class="arrow">
-                    <img id="arrowleft" src="arrow-left.png" alt="leftarrow">
-                    <img id="arrowright" src="arrow-right.png" alt="rightarrow">
+                    <img class="left-slider" src="images/arrow-left.png" alt="leftarrow">
+                    <img class="right-slider" src="images/arrow-right.png" alt="rightarrow">
                 </div>
 
             </div>
-            <!-- post slider end -->
         </div>
         <!--Midblock2 end -->
+
+
+
 
         <!-- Footer start -->
     <div class="footer">
@@ -168,9 +219,9 @@
             <p class="dummytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo explicabo labore voluptatem porro delectus!</p>
             <p>Socials</p>
             <div class="social">
-                <img src="facebook.png" alt="facebook">
-                <img src="linkedin.png" alt="linkedin">
-                <img src="instagram.png" alt="instagram">
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/linkedin.png" alt="linkedin">
+                <img src="images/instagram.png" alt="instagram">
             </div>
         </div>
         <div class="child-footer2">
@@ -189,16 +240,16 @@
         </div>
         <div class="child-footer4">
             <h4>Partners</h4>
-            <img src="google_podcast@2x.png" alt="google_podcast">
-            <img src="apple_podcast@2x.png" alt="apple_podcast">
-            <img src="spotify@2x.png" alt="spotify">
+            <img src="images/google_podcast@2x.png" alt="google_podcast">
+            <img src="images/apple_podcast@2x.png" alt="apple_podcast">
+            <img src="images/spotify@2x.png" alt="spotify">
         </div>
     </div>
     <div class="footer-end">
         <p class="dummytext">@2020 Josh Technology Group</p>
     </div>
     <!-- Footer end -->
-
+    <script src="web.js"></script>
 </body>
 
 </html>
